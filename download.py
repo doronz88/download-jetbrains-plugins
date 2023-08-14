@@ -19,7 +19,10 @@ PLUGINS = [
     'com.samdark.intellij-visual-studio-code-dark-plus',
 
     # https://plugins.jetbrains.com/plugin/11938-one-dark-theme
-    'com.markskelton.one-dark-theme'
+    'com.markskelton.one-dark-theme',
+
+    # https://plugins.jetbrains.com/plugin/164-ideavim
+    'IdeaVIM',
 ]
 BUILD = '232.8660.197'
 DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={plugin_xml_id}&build={build}'
