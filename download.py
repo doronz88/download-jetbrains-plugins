@@ -6,9 +6,17 @@ import requests
 from plumbum import local, FG
 
 PLUGINS = [
-    'izhangzhihao.rainbow.brackets',  # https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
-    'com.mallowigi',  # https://plugins.jetbrains.com/plugin/10044-atom-material-icons
-    'de.docs_as_co.intellij.plugin.diagramsnet'  # https://plugins.jetbrains.com/plugin/15635-diagrams-net-integration
+    # https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
+    'izhangzhihao.rainbow.brackets',
+
+    # https://plugins.jetbrains.com/plugin/10044-atom-material-icons
+    'com.mallowigi',
+
+    # https://plugins.jetbrains.com/plugin/15635-diagrams-net-integration
+    'de.docs_as_co.intellij.plugin.diagramsnet',
+
+    # https://plugins.jetbrains.com/plugin/12255-visual-studio-code-dark-plus-theme
+    'com.samdark.intellij-visual-studio-code-dark-plus',
 ]
 BUILD = '232.8660.197'
 DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={plugin_xml_id}&build={build}'
