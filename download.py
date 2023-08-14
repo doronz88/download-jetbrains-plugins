@@ -23,6 +23,9 @@ PLUGINS = [
 
     # https://plugins.jetbrains.com/plugin/164-ideavim
     'IdeaVIM',
+
+    # https://plugins.jetbrains.com/plugin/8006-material-theme-ui
+    'com.chrisrm.idea.MaterialThemeUI',
 ]
 BUILD = '232.8660.197'
 DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={plugin_xml_id}&build={build}'
