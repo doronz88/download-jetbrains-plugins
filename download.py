@@ -8,6 +8,7 @@ from plumbum import local, FG
 PLUGINS = [
     'izhangzhihao.rainbow.brackets',  # https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
     'com.mallowigi',  # https://plugins.jetbrains.com/plugin/10044-atom-material-icons
+    'de.docs_as_co.intellij.plugin.diagramsnet'  # https://plugins.jetbrains.com/plugin/15635-diagrams-net-integration
 ]
 BUILD = '232.8660.197'
 DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={plugin_xml_id}&build={build}'
