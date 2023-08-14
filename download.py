@@ -29,6 +29,9 @@ PLUGINS = [
 
     # https://plugins.jetbrains.com/plugin/7724-docker
     'Docker',
+
+    # https://plugins.jetbrains.com/plugin/13122-shell-script
+    'com.jetbrains.sh',
 ]
 BUILD = '232.8660.197'
 DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={plugin_xml_id}&build={build}'
