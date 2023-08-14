@@ -26,6 +26,9 @@ PLUGINS = [
 
     # https://plugins.jetbrains.com/plugin/8006-material-theme-ui
     'com.chrisrm.idea.MaterialThemeUI',
+
+    # https://plugins.jetbrains.com/plugin/7724-docker
+    'Docker',
 ]
 BUILD = '232.8660.197'
 DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={plugin_xml_id}&build={build}'
