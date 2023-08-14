@@ -21,9 +21,6 @@ PLUGINS = [
     # https://plugins.jetbrains.com/plugin/11938-one-dark-theme
     'com.markskelton.one-dark-theme',
 
-    # https://plugins.jetbrains.com/plugin/164-ideavim
-    'IdeaVIM',
-
     # https://plugins.jetbrains.com/plugin/8006-material-theme-ui
     'com.chrisrm.idea.MaterialThemeUI',
 
