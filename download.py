@@ -17,6 +17,9 @@ PLUGINS = [
 
     # https://plugins.jetbrains.com/plugin/12255-visual-studio-code-dark-plus-theme
     'com.samdark.intellij-visual-studio-code-dark-plus',
+
+    # https://plugins.jetbrains.com/plugin/11938-one-dark-theme
+    'com.markskelton.one-dark-theme'
 ]
 BUILD = '232.8660.197'
 DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={plugin_xml_id}&build={build}'
