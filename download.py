@@ -38,6 +38,9 @@ DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={
 DETAILS_URL = 'https://plugins.jetbrains.com/plugins/list?pluginId={plugin_xml_id}'
 
 wget = local['wget']
+file = local['file']
+mv = local['mv']
+rm = local['rm']
 
 
 def get_plugin_latest_version(plugin_xml_id: str) -> str:
@@ -55,13 +58,20 @@ def download(plugin_xml_id: str, output: Path, build: str = BUILD) -> None:
 @click.argument('output', type=click.Path(file_okay=False))
 def cli(output: str):
     output = Path(output)
+    rm('-r', output)
     output.mkdir(exist_ok=True, parents=True)
     for plugin in PLUGINS:
         latest_version = get_plugin_latest_version(plugin)
-        output_file = output / f'{plugin}_{latest_version}.zip'
-        if output_file.exists():
+        output_file_prefix = output / f'{plugin}_{latest_version}'
+        output_file_zip = output_file_prefix.with_suffix('.zip')
+        output_file_jar = output_file_prefix.with_suffix('.jar')
+        if output_file_zip.exists() or output_file_jar.exists():
             continue
-        download(plugin, output_file)
+        download(plugin, output_file_prefix)
+        if 'JAR' in file(output_file_prefix):
+            mv(output_file_prefix, output_file_jar)
+        else:
+            mv(output_file_prefix, output_file_zip)
 
 
 if __name__ == '__main__':
