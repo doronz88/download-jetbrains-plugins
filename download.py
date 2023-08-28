@@ -58,7 +58,7 @@ def download(plugin_xml_id: str, output: Path, build: str = BUILD) -> None:
 @click.argument('output', type=click.Path(file_okay=False))
 def cli(output: str):
     output = Path(output)
-    rm('-r', output)
+    rm('-rf', output)
     output.mkdir(exist_ok=True, parents=True)
     for plugin in PLUGINS:
         latest_version = get_plugin_latest_version(plugin)
