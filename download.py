@@ -6,8 +6,8 @@ import requests
 from plumbum import local, FG
 
 PLUGINS = [
-    # https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
-    'izhangzhihao.rainbow.brackets',
+    # https://plugins.jetbrains.com/plugin/20710-rainbow-brackets-lite--free-and-opensource
+    'izhangzhihao.rainbow.brackets.lite',
 
     # https://plugins.jetbrains.com/plugin/10044-atom-material-icons
     'com.mallowigi',
@@ -33,7 +33,7 @@ PLUGINS = [
     # https://plugins.jetbrains.com/plugin/9333-makefile-language
     'name.kropp.intellij.makefile',
 ]
-BUILD = '232.8660.197'
+BUILD = '233.11799.298'
 DOWNLOAD_URL = 'https://plugins.jetbrains.com/pluginManager?action=download&id={plugin_xml_id}&build={build}'
 DETAILS_URL = 'https://plugins.jetbrains.com/plugins/list?pluginId={plugin_xml_id}'
 
